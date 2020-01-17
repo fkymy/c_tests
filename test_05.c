@@ -37,6 +37,9 @@ int	main(void)
 	printf("-4 power 2 should be 16: %d\n", ft_recursive_power(-4, 2));
 	printf("-4 power -2 should be 0: %d\n", ft_recursive_power(-4, -2));
 	printf("4 power 2 should be 16: %d\n", ft_recursive_power(4, 2));
+	printf("-3 power 8 should be 6561: %d\n", ft_recursive_power(3, 8));
+	printf("-5 power 7 should be -78125: %d\n", ft_recursive_power(-5, 7));
+	printf("7 power 6 should be 117649: %d\n", ft_recursive_power(7, 6));
 	printf("\n");
 	for (int i = -2; i < 10; i++)
 	{
@@ -75,6 +78,7 @@ int	main(void)
 	printf("\n");
 
 
+	return (0);
 	printf("next prime of ... is: %d\n", ft_find_next_prime(2));
 
 	for (int i = -5; i <= 100000; i++)
@@ -82,5 +86,4 @@ int	main(void)
 		printf("next prime of %d is: %d\n", i, ft_find_next_prime(i));
 	}
 
-	return (0);
 }
